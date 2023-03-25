@@ -90,6 +90,11 @@ module.exports = {
                 // Comparaison avec les images stockées dans l'objet images
                 let isDuplicate = false;
                 for (let existingHash in images) {
+                  // Calcul du hachage de l'image et vérification de son unicité
+                  /*La fonction Jimp.distance() de la bibliothèque Jimp permet de mesurer la différence entre deux images en utilisant une distance métrique. Elle calcule la distance euclidienne entre chaque pixel des deux images, c'est-à-dire la racine carrée de la somme des carrés des différences entre les valeurs RGB de chaque pixel.
+                  La fonction prend en entrée deux instances de la classe Jimp représentant les deux images à comparer, et renvoie un nombre à virgule flottante compris entre 0 et 1, où 0 indique que les images sont identiques et 1 indique qu'elles sont complètement différentes.
+                  Dans le code ci-dessous, image correspond à l'image courante chargée avec Jimp, et Jimp.read(uniqueHashes) est une méthode qui charge les images stockées dans l'ensemble uniqueHashes, qui contient les hachages des images uniques.
+                  */
                   const distance = Jimp.distance(image, images[existingHash]);
                   if (distance < 0.05) {
                     console.log(`${file} est un doublon`);
