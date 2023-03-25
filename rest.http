@@ -1,0 +1,30 @@
+### HASHAGE
+GET http://localhost:3000/api/useJimp/hashDedblonnage
+Content-Type: application/json
+
+### PAR PIXEL
+GET http://localhost:3000/api/useJimp/pixelDedblonnage
+Content-Type: application/json
+
+
+###
+POST http://DESKTOP-03HIVDC:8280/services/camion_DataService/camion_add
+Content-Type: application/json
+
+{
+    "body":{
+        "imatricule":"AA12456",
+        "chauffeur": "Mianoka"
+    }
+}
+
+###
+
+POST http://localhost:3000/api/newsletter/sendMail
+Content-Type: application/json
+
+{
+    "objet": "Objet test" , 
+    "contenu" : "Objet content", 
+    "email": "mihaingoherilanto@gmail.com"
+}
