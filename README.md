@@ -54,8 +54,3 @@ Login user:
             "email":"bema@gmail.com",
             "password":"bema@gmail.com"
         }
-
-# Test send mail NGPA
-1- Clone le projet
-2- npm install
-3- Dans service/service.js se trouve la fonction send_email pour configurer l'envoie des mail
