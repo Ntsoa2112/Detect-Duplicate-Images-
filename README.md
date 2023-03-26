@@ -11,6 +11,8 @@ The goal of this project is to create an API structure that is easy to use and s
 - Create the environment variable .env file, then copy the content of .env.example into .env, after adding the name of your database, the password and all the necessary configurations
 - npm run start
 
+## Link recadrage 1.25
+https://forum.instinct-photo.fr/viewtopic.php?t=4615
 ## Route
 List élève:
 
