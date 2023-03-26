@@ -1,11 +1,22 @@
 ### HASHAGE
-GET http://localhost:3000/api/useJimp/hashDedblonnage
+GET http://localhost:3000/api/useJimp/hash
+Content-Type: application/json
+
+### HASHAGE et RECADRAGE 1:25
+GET http://localhost:3000/api/useJimp/hashRecadrage125
+Content-Type: application/json
+
+### HASHAGE et RECADRAGE 1.25
+GET http://localhost:3000/api/useJimp/hashRecadrage1Virgule5
 Content-Type: application/json
 
 ### PAR PIXEL
-GET http://localhost:3000/api/useJimp/pixelDedblonnage
+GET http://localhost:3000/api/useJimp/pixel
 Content-Type: application/json
 
+### PAR PIXEL et RECADRAGE 1.25
+GET http://localhost:3000/api/useJimp/pixelRecadrage1Virgule5
+Content-Type: application/json
 
 ###
 POST http://DESKTOP-03HIVDC:8280/services/camion_DataService/camion_add
